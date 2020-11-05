@@ -418,7 +418,7 @@ nav {
             display: flex;
             justify-content: flex-end;
             align-items: baseline;
-            font-size: 13px;
+            font-size: 15px;
 
             & > div {
                 margin-inline-start: 12px;
@@ -429,8 +429,8 @@ nav {
                 color: $color2;
                 border: 1px solid rgb(189, 189, 189);
                 border-radius: 50%;
-                width: 31px;
-                height: 31px;
+                width: 40px;
+                height: 40px;
                 transition: all 0.5s;
 
                 .ico {
@@ -448,6 +448,28 @@ nav {
 
                     a {
                         color: black;
+                    }
+                }
+            }
+
+            .user{
+                .setting-anchor{
+                    &::after{
+                        display: none;
+                    }
+                }
+
+                &:hover{
+                    .setting-anchor{
+                        color:black;
+                    }
+                }
+
+                .top-dropDown{
+                    top:calc(100% + 7px);
+
+                    a:hover{
+                        color: $color1;
                     }
                 }
             }
@@ -522,13 +544,13 @@ nav {
                 font-weight: 500;
 
                 & > li {
-                    margin: 0 20px;
+                    margin: 0 15px;
 
                     & > a {
                         color: $color2;
                         transition: all 0.5s;
                         font-weight: 500;
-                        font-size: 18.5px;
+                        font-size: 16px;
                         text-transform: capitalize;
                         &:hover {
                             color: $color1;
@@ -1494,7 +1516,7 @@ header {
 
 footer {
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
 
     @media (max-width: 576px) {
         padding: 35px 30px;

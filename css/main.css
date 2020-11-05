@@ -633,7 +633,7 @@ nav .nav-bottom .nav-icons {
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 nav .nav-bottom .nav-icons > div {
@@ -645,8 +645,8 @@ nav .nav-bottom .nav-icons > div {
   color: #443b40;
   border: 1px solid #bdbdbd;
   border-radius: 50%;
-  width: 31px;
-  height: 31px;
+  width: 40px;
+  height: 40px;
   transition: all 0.5s;
 }
 
@@ -666,6 +666,22 @@ nav .nav-bottom .nav-icons > div:hover {
 
 nav .nav-bottom .nav-icons > div:hover a {
   color: black;
+}
+
+nav .nav-bottom .nav-icons .user .setting-anchor::after {
+  display: none;
+}
+
+nav .nav-bottom .nav-icons .user:hover .setting-anchor {
+  color: black;
+}
+
+nav .nav-bottom .nav-icons .user .top-dropDown {
+  top: calc(100% + 7px);
+}
+
+nav .nav-bottom .nav-icons .user .top-dropDown a:hover {
+  color: #fdbe1b;
 }
 
 nav .nav-bottom .nav-icons .cart {
@@ -740,14 +756,14 @@ nav .nava .nava-content > ul {
 }
 
 nav .nava .nava-content > ul > li {
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 nav .nava .nava-content > ul > li > a {
   color: #443b40;
   transition: all 0.5s;
   font-weight: 500;
-  font-size: 18.5px;
+  font-size: 16px;
   text-transform: capitalize;
 }
 
@@ -1752,7 +1768,7 @@ header .swiper-container .swiper-slide img {
 
 footer {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 576px) {
